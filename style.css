@@ -3,10 +3,17 @@ html {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-p {
+p,
+h4 {
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
 body {
+    font-size: 2rem;
     margin: 0;
     width: 100%;
     box-sizing: border-box;
@@ -17,7 +24,7 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0px 40px 40px 40px;
+    padding: 0 40px;
 }
 
 h1 {
@@ -28,8 +35,10 @@ h1 {
     color: #F7B32B;
 }
 
-h3 {
-    font-size: 3rem;
+.column-education {
+    margin: 10px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .underline {
@@ -41,35 +50,80 @@ h3 {
 
 .photo {
     max-width: 300px;
+    width: 100%;
     height: 100%;
     text-align: end;
     padding-right: 2rem;
     border-radius: 0 0 10rem 10rem;
-    position: relative;
 }
 
 .header-elements {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.about-description {
-    font-size: 2rem;
-}
-
-.left-part {
-    padding-top: 10px;
-    font-weight: 700;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-.element {
+.main-description {
     width: 50%;
-    height: 500px;
-    position: absolute;
-    top: 250px;
-    left: 90px;
 }
+
+.left-part>h4:nth-child(1) {
+    margin-bottom: 115px;
+}
+
+.divider img {
+    margin: 10px 0;
+    width: -webkit-fill-available;
+}
+
+.ico-line {
+    width: 30%;
+    padding-right: 30px;
+}
+
+
+/* main */
+.section-title {
+    width: 25%;
+}
+
+.column-3 {
+    display: flex;
+}
+
 .left-part p:nth-child(1) {
     margin-bottom: 300px;
 }
+
+.element {
+    width: 50px;
+}
+
+/* contacts */
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.contacts img {
+    display: block;
+    margin: 0 auto;
+}
+
+.contact-element {
+    width: 30%;
+    text-align: center;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4vh;
+}
+
+.github-account {}
