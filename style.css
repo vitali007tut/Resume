@@ -10,6 +10,12 @@ h4 {
 
 a {
     text-decoration: none;
+    color: #a10000;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: #635436;
 }
 
 body {
@@ -38,7 +44,6 @@ h1 {
 .column-education {
     margin: 10px 0 20px 0;
     display: flex;
-    justify-content: space-between;
 }
 
 .underline {
@@ -59,11 +64,7 @@ h1 {
 
 .header-elements {
     display: flex;
-    flex-wrap: wrap;
-}
-
-.main-description {
-    width: 50%;
+    justify-content: center;
 }
 
 .left-part>h4:nth-child(1) {
@@ -77,13 +78,12 @@ h1 {
 
 .ico-line {
     width: 30%;
-    padding-right: 30px;
 }
 
 
 /* main */
 .section-title {
-    width: 25%;
+    width: 130px;
 }
 
 .column-3 {
