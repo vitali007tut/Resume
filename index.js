@@ -1,10 +1,16 @@
-const sun = document.querySelector('.sun')
-const moon = document.querySelector('.moon')
+const sun = document.querySelector('.sun');
+const moon = document.querySelector('.moon');
+const container = document.querySelector('.container');
+const links = document.querySelectorAll('a');
+const githubIco = document.querySelector('.github-account')
+
 
 sun.addEventListener('click', changeColor1)
 
 function changeColor1() {
-    document.body.style.background = ''
+    container.classList.remove('container-dark');
+    links.forEach(e => e.classList.remove('dark-mode'));
+    githubIco.classList.remove('dark-mode');
     document.body.style.color = ''
     moon.style.opacity = 1
     moon.style.width = '30px'
@@ -15,7 +21,9 @@ function changeColor1() {
 moon.addEventListener('click', changeColor2)
 
 function changeColor2() {
-    document.body.style.background = 'linear-gradient(#5B483A, #262425)'
+    container.classList.add('container-dark');
+    links.forEach(e => e.classList.add('dark-mode'));
+    githubIco.classList.add('dark-mode');
     document.body.style.color = 'white'
     sun.style.opacity = 1
     sun.style.width = '30px'
