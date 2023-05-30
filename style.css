@@ -77,11 +77,10 @@ h3 {
     transition: all 1s;
 }
 
-
-
 .column-education {
     margin: 10px 0 20px 0;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .underline {
@@ -103,6 +102,7 @@ h3 {
 .header-elements {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .left-part>h4:nth-child(1) {
@@ -116,6 +116,14 @@ h3 {
 
 .ico-line {
     width: 30%;
+}
+
+@media (max-width: 700px) {
+
+    .ico-line {
+        visibility: hidden;
+    }
+    
 }
 
 
@@ -152,7 +160,7 @@ h3 {
 }
 
 .contact-element {
-    width: 30%;
+    /* width: 30%; */
     text-align: center;
 }
 
