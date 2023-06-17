@@ -132,6 +132,10 @@ h3 {
     width: 130px;
 }
 
+.section-title.dark-mode {
+    color: #F7B32B;
+}
+
 .column-3 {
     display: flex;
 }
