@@ -14,10 +14,8 @@ function changeColor1() {
     githubIco.classList.remove('dark-mode');
     sectionTitle.forEach(element => element.classList.remove('dark-mode'));
     document.body.style.color = '';
-    moon.style.opacity = 1
-    moon.style.width = '30px'
-    sun.style.opacity = 0
-    sun.style.width = 0
+    sun.classList.remove('dark-mode')
+    moon.classList.remove('dark-mode')
 }
 
 moon.addEventListener('click', changeColor2)
@@ -28,8 +26,6 @@ function changeColor2() {
     githubIco.classList.add('dark-mode');
     document.body.style.color = 'white';
     sectionTitle.forEach(element => element.classList.add('dark-mode'));
-    sun.style.opacity = 1
-    sun.style.width = '30px'
-    moon.style.opacity = 0   
-    moon.style.width = 0
+    sun.classList.add('dark-mode')
+    moon.classList.add('dark-mode')
 }
