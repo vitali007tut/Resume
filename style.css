@@ -43,7 +43,14 @@ body {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 40px;
-    background: url(./asserts/Texture.png);
+    background: url(./asserts/back-texture.png);
+}
+
+.main-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
 }
 
 h1 {
@@ -61,7 +68,6 @@ h3 {
 }
 
 .ico {
-    margin-top: 10px;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -71,10 +77,26 @@ h3 {
     transition: all 1s;
     opacity: 0;
     width: 0;
+    height: 0;
+}
+
+.sun.dark-mode{
+    opacity: 1;
+    width: 30px;
+    height: 30px;
 }
 
 .moon {
     transition: all 1s;
+    opacity: 1;
+    width: 30px;
+    height: 30px;
+}
+
+.moon.dark-mode {
+    opacity: 0;
+    height: 0px;
+    width: 0px;
 }
 
 .column-education {
@@ -95,7 +117,6 @@ h3 {
     width: 100%;
     height: 100%;
     text-align: end;
-    padding-right: 2rem;
     border-radius: 3rem;
 }
 
@@ -121,7 +142,15 @@ h3 {
 @media (max-width: 700px) {
 
     .ico-line {
-        visibility: hidden;
+        display: none;
+    }
+
+    .element {
+        display: none;
+    }
+
+    .column-education{
+        flex-direction: column;
     }
     
 }
@@ -164,7 +193,6 @@ h3 {
 }
 
 .contact-element {
-    /* width: 30%; */
     text-align: center;
 }
 
